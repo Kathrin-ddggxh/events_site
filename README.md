@@ -39,6 +39,10 @@ To run app: ``python manage.py runserver``
 
 To stop runserver: Ctrl + C
 
+#### Start Django App
+
+To start new app: ``python manage.py startapp <app-name>``
+
 
 ## Setting up environment variables
 
