@@ -76,3 +76,6 @@ Then in env.py add:
 os.environ["DEVELOPMENT"] = "AnyValueWillEquateToTrue"
 ```
 
+## Technologies used
+
+- Bootstrap 5 [CDNs](https://cdnjs.com/libraries/bootstrap/5.3.2) and [Docs](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
