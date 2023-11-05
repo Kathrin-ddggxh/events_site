@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Karantina&family=Roboto:wght@400;500&display=swap');
+/* 
+font-family: 'Karantina', serif;
+font-family: 'Roboto', sans-serif; 
+*/
+
+:root {
+    /* Fonts */
+    --heading: 'Karantina', serif;
+    --main-font: 'Roboto', sans-serif;
+
+    /* Colours */
+    --black: #000;
+    --white: #fff;
+    --red: #fe0000; 
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* General styling */
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--main-font);
+    background-color: var(--black);
+}
+
+/* Navigation */
+
+.navbar {
+    background-color: var(--black) !important;
+    border-bottom: solid 7px var(--white);
+}
+
+.navbar-brand, .nav-link {
+    font-family: var(--heading);
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.nav-link {
+    margin: 0 .3em;
+}
+
+.nav-admin {
+    background-color: var(--white);
+    color: var(--black);
+    padding: .3em 1em;
+}
+
+.navbar-toggler {
+    background-color: var(--white);
+    border: none;
+}
+

@@ -79,3 +79,18 @@ os.environ["DEVELOPMENT"] = "AnyValueWillEquateToTrue"
 ## Technologies used
 
 - Bootstrap 5 [CDNs](https://cdnjs.com/libraries/bootstrap/5.3.2) and [Docs](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+
+**Compressing/Resizing Images:** [ILoveImg](https://www.iloveimg.com/)
+
+
+## Credits
+
+### Media
+
+#### Images / Icons
+
+*star-logo* (placeholder only): https://ih1.redbubble.net/image.423993253.0830/flat,750x1000,075,f.jpg
+
+#### Fonts
+
+*Roboto* and *Karantina*: [Google Fonts](https://fonts.google.com/)
