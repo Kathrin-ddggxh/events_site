@@ -21,7 +21,7 @@ If environment was named differently, adjust command accordingly (``<env-name>/S
 Ensure to have virtual environment activate when running the application or installing any packages.
 
 
-## Installed Dependencies
+## Installed Dependencies and Packages
 
 ### Django
 
@@ -42,6 +42,23 @@ To stop runserver: Ctrl + C
 #### Start Django App
 
 To start new app: ``python manage.py startapp <app-name>``
+
+#### Django Migrations
+
+Migration files are a set of instructions to translate a model into a database table. Run command ``python manage.py makemigrations``
+
+To migrate, run ``python manage.py migrate``. This will physically create the database table.
+
+### Django Allauth
+
+To install [Django Allauth](https://docs.allauth.org/en/latest/installation/quickstart.html) run: ``pip install django-allauth``
+
+After installing, inside allauth/templates directory in .venv/Lib, accounts directory can be copied and moved into root templates directory (templates/allauth/accounts).
+This allows for permanent custom styling on allauth pages.
+
+#### Creating Admin User
+
+To create a Django admin (or super) user, run ``python manage.py createsuperuser``
 
 
 ## Setting up environment variables
