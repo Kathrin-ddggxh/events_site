@@ -13,6 +13,7 @@ font-family: 'Roboto', sans-serif;
     --black: #000;
     --white: #fff;
     --red: #fe0000; 
+    --grey: #e2e2e2;
 }
 
 *,
@@ -76,6 +77,19 @@ h1 {
     margin: 2rem 0;
 }
 
+.bio-img {
+    height: 100%;
+}
+
+.bio-container {
+    background-color: var(--grey);
+}
+
+.bio {
+    padding: 3rem;
+    color: var(--black);
+}
+
 /* Footer */
 
 footer {
@@ -87,7 +101,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: auto;
 }
 
 footer > p {
