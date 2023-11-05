@@ -75,3 +75,21 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     margin: 2rem 0;
 }
+
+/* Footer */
+
+footer {
+    background-color: var(--white);
+    text-align: center;
+    font-family: var(--heading);
+    color: var(--black);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+footer > p {
+    margin: .7em 0;
+}
