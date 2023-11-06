@@ -60,6 +60,12 @@ This allows for permanent custom styling on allauth pages.
 
 To create a Django admin (or super) user, run ``python manage.py createsuperuser``
 
+### Django Crispy Forms and Bootstrap Crispy Forms
+
+To install django crispy: ``pip install django_crispy_forms``
+
+To install bootstrap 5 crispy: ``pip install crispy_bootstrap5``
+
 
 ## Setting up environment variables
 
@@ -95,9 +101,9 @@ os.environ["DEVELOPMENT"] = "AnyValueWillEquateToTrue"
 
 ## Technologies used
 
-- Bootstrap 5 [CDNs](https://cdnjs.com/libraries/bootstrap/5.3.2) and [Docs](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- **Bootstrap 5:** [CDNs](https://cdnjs.com/libraries/bootstrap/5.3.2) and [Docs](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
-**Compressing/Resizing Images:** [ILoveImg](https://www.iloveimg.com/)
+- **Compressing/Resizing Images:** [ILoveImg](https://www.iloveimg.com/)
 
 
 ## Credits
