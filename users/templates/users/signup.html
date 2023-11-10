@@ -1,0 +1,17 @@
+<!-- 
+    source:
+    https://learndjango.com/tutorials/django-signup-tutorial#:~:text=%7B%25%20extends%20%22base.html%22%20%25%7D%0A%0A%7B%25%20block%20title%20%25%7DSign%20Up%7B%25%20endblock%20%25%7D%0A%0A%7B%25%20block%20content%20%25%7D%0A%20%20%3Ch2%3ESign%20up%3C/h2%3E%0A%20%20%3Cform%20method%3D%22post%22%3E%0A%20%20%20%20%7B%25%20csrf_token%20%25%7D%0A%20%20%20%20%7B%7B%20form.as_p%20%7D%7D%0A%20%20%20%20%3Cbutton%20type%3D%22submit%22%3ESign%20Up%3C/button%3E%0A%20%20%3C/form%3E%0A%7B%25%20endblock%20%25%7D
+ -->
+
+{% extends "base.html" %}
+
+{% block title %}Sign Up{% endblock %}
+
+{% block content %}
+  <h2>Sign up</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Sign Up</button>
+  </form>
+{% endblock %}

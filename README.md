@@ -108,6 +108,14 @@ os.environ["DEVELOPMENT"] = "AnyValueWillEquateToTrue"
 
 ## Credits
 
+### Code
+
+#### User Registration functionality
+
+- https://learndjango.com/tutorials/django-signup-tutorial
+
+- https://stackoverflow.com/questions/62935406/how-to-make-a-signup-view-using-class-based-views-in-django
+
 ### Media
 
 #### Images / Icons
