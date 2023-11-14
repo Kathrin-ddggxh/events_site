@@ -116,6 +116,13 @@ os.environ["DEVELOPMENT"] = "AnyValueWillEquateToTrue"
 
 - https://stackoverflow.com/questions/62935406/how-to-make-a-signup-view-using-class-based-views-in-django
 
+#### User Login/Logout functionality
+
+- https://learndjango.com/tutorials/django-login-and-logout-tutorial
+
+- https://www.pythontutorial.net/django-tutorial/django-loginview/
+
+
 ### Media
 
 #### Images / Icons
