@@ -21,9 +21,11 @@
 <body>
     {% include 'includes/header.html' %}
     <main>
+        <div class="container mb-5">
         {% block content %} 
 
         {% endblock %}
+        </div>
     </main> 
     {% include 'includes/footer.html' %}
 </body>

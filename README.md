@@ -51,6 +51,8 @@ To migrate, run ``python manage.py migrate``. This will physically create the da
 
 ### Django Allauth
 
+This was discarded for this project in favour of Django's built in authentication system.
+
 To install [Django Allauth](https://docs.allauth.org/en/latest/installation/quickstart.html) run: ``pip install django-allauth``
 
 After installing, inside allauth/templates directory in .venv/Lib, accounts directory can be copied and moved into root templates directory (templates/allauth/accounts).
