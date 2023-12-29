@@ -18,7 +18,7 @@ class SignUpView(SuccessMessageMixin, CreateView):
     """
 
     form_class = UserRegisterForm
-    success_url = reverse_lazy("home")
+    success_url = reverse_lazy("login")
     template_name = "users/signup.html"
     success_message = "Registration was successful"
 

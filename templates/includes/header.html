@@ -32,7 +32,7 @@
                         <a class="nav-link dropdown-toggle nav-admin {% if request.resolver_match.url_name == 'login' %}active{% endif %}"
                             href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admin</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item nav-link nav-admin" href="#">New</a></li>
+                            <li><a class="dropdown-item nav-link nav-admin" {% if request.resolver_match.url_name == 'signup' %}aria-current="page"{% endif %} href="{% url 'signup' %}">New</a></li>
                             <li><a class="dropdown-item nav-link nav-admin" {% if request.resolver_match.url_name == 'login' %}aria-current="page"{% endif %} href="{% url 'login' %}">Existing</a></li>
                         </ul>
                     </li>
