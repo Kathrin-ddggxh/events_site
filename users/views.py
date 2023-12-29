@@ -24,13 +24,14 @@ class SignUpView(SuccessMessageMixin, CreateView):
 
 
 # source: https://www.pythontutorial.net/django-tutorial/django-loginview/#:~:text=class%20MyLoginView(LoginView,get_context_data(form%3Dform))  # noqa
-class UserLoginView(LoginView):
+class UserLoginView(SuccessMessageMixin, LoginView):
     """
     User Login View
     """
 
     template_name = "users/login.html"
     redirect_authenticated_user = True
+    success_message = "Login was successful"
 
     def get_success_url(self):
         return reverse_lazy("home")
@@ -40,7 +41,7 @@ class UserLoginView(LoginView):
         return self.render_to_response(self.get_context_data(form=form))
 
 
-class UserLogoutView(View):
+class UserLogoutView(SuccessMessageMixin, View):
     """
     User logout view
     """
@@ -51,4 +52,5 @@ class UserLogoutView(View):
 
     def post(self, request):
         logout(request)
+        messages.success(request, "Logout was successful")
         return redirect('home')
