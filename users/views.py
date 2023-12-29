@@ -1,3 +1,7 @@
+from django.shortcuts import render, redirect
+from django.contrib.auth import logout
+from django.views import View
+
 from django.views.generic.edit import CreateView
 from django.contrib.auth.views import LoginView
 from django.contrib.messages.views import SuccessMessageMixin
@@ -34,3 +38,17 @@ class UserLoginView(LoginView):
     def form_invalid(self, form):
         messages.error(self.request, "Invalid username or password")
         return self.render_to_response(self.get_context_data(form=form))
+
+
+class UserLogoutView(View):
+    """
+    User logout view
+    """
+    template_name = "users/logout.html"
+
+    def get(self, request):
+        return render(request, self.template_name)
+
+    def post(self, request):
+        logout(request)
+        return redirect('home')
