@@ -3,7 +3,7 @@
 <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}">
+            <a class="navbar-brand {% if request.resolver_match.url_name == 'home' %}active{% endif %}" {% if request.resolver_match.url_name == 'home' %}aria-current="page"{% endif %} href="{% url 'home' %}">
                 <img src="{% static 'images/star-logo.jpg' %}"
                     alt="anarcho-communist star icon" width="60">
                 Artist Name
@@ -20,9 +20,23 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Event Gallery</a>
                     </li>
+                    {% if request.user.is_authenticated %}
                     <li class="nav-item ms-auto">
-                        <a class="nav-link nav-admin" href="{% url 'login' %}">Admin</a>
+                        <a class="nav-link nav-admin" href="#">Add New Event</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-admin" href="#">Logout</a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item dropdown ms-auto">
+                        <a class="nav-link dropdown-toggle nav-admin {% if request.resolver_match.url_name == 'login' %}active{% endif %}"
+                            href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admin</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item nav-link nav-admin" href="#">New</a></li>
+                            <li><a class="dropdown-item nav-link nav-admin" {% if request.resolver_match.url_name == 'login' %}aria-current="page"{% endif %} href="{% url 'login' %}">Existing</a></li>
+                        </ul>
+                    </li>
+                    {% endif %}
                 </ul>
             </div>
         </div>

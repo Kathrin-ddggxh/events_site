@@ -45,6 +45,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navigation */
 
+.active {
+    text-decoration: underline;
+}
+
 .navbar {
     background-color: var(--black) !important;
     border-bottom: solid 7px var(--white);
@@ -60,10 +64,22 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 .3em;
 }
 
+.nav-link:focus, 
+.nav-link:hover,
+.navbar-brand:focus,
+.navbar-brand:hover {
+    background-color: var(--white) !important;
+}
+
 .nav-admin {
     background-color: var(--white);
     color: var(--black);
     padding: .3em 1em;
+}
+
+.nav-admin:focus, .nav-admin:hover {
+    color: var(--white) !important;
+    background-color: var(--black) !important;
 }
 
 .navbar-toggler {
