@@ -3,7 +3,24 @@
 {% block title %}Upcoming Events{% endblock %}
 
 {% block content %} 
-
-    <h1>Upcoming Events</h1>
-
+    <div class="events-container">
+        <h1 class="events-heading">Upcoming Events</h1>
+    
+        <table>
+            <tr>
+                <th>Location</th>
+                <th>Venue</th>
+                <th>Date & Time</th>
+                <th>Admission</th>
+            </tr>
+            <!-- for loop to fetch events here -->
+            <tr class="events-content">
+                <td>event.location</td>
+                <td>event.venue</td>
+                <td>event.datetime</td>
+                <td>event.admission</td>
+            </tr>
+            <!-- end for loop -->
+        </table>
+    </div>
 {% endblock %}
