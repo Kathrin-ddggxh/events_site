@@ -15,7 +15,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav w-100">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Upcoming Events</a>
+                        <a class="nav-link {% if request.resolver_match.url_name == 'upcoming' %}active{% endif %}" {% if request.resolver_match.url_name == 'upcoming' %}aria-current="page"{% endif %} href="{% url 'upcoming' %}">Upcoming Events</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Event Gallery</a>

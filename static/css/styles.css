@@ -64,6 +64,12 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 .3em;
 }
 
+/* override Bootstrap styling */
+.navbar-nav .nav-link.active {
+    background-color: var(--black);
+    color: var(--white);
+}
+
 .nav-link:focus, 
 .nav-link:hover,
 .navbar-brand:focus,
@@ -77,7 +83,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: .3em 1em;
 }
 
-.nav-admin:focus, .nav-admin:hover {
+.nav-admin:focus,
+.nav-admin:hover {
     color: var(--white) !important;
     background-color: var(--black) !important;
 }
