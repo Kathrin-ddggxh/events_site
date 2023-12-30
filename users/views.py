@@ -45,6 +45,7 @@ class UserLogoutView(SuccessMessageMixin, View):
     """
     User logout view
     """
+
     template_name = "users/logout.html"
 
     def get(self, request):
@@ -53,4 +54,4 @@ class UserLogoutView(SuccessMessageMixin, View):
     def post(self, request):
         logout(request)
         messages.success(request, "Logout was successful")
-        return redirect('home')
+        return redirect("home")
