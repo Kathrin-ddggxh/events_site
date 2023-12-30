@@ -1,9 +1,13 @@
-from django.views.generic import TemplateView
+from django.views.generic import ListView
+
+from .models import UpcomingEvent
 
 
-class UpcomingEvents(TemplateView):
+class UpcomingEvents(ListView):
     """
-    renders events page
+    renders upcoming events on events page
     """
 
     template_name = "events/upcoming.html"
+    model = UpcomingEvent
+    context_object_name = "events"

@@ -13,14 +13,14 @@
                 <th>Date & Time</th>
                 <th>Admission</th>
             </tr>
-            <!-- for loop to fetch events here -->
+            {% for event in events %}
             <tr class="events-content">
                 <td>event.location</td>
                 <td>event.venue</td>
                 <td>event.datetime</td>
                 <td>event.admission</td>
             </tr>
-            <!-- end for loop -->
+            {% endfor %}
         </table>
     </div>
 {% endblock %}

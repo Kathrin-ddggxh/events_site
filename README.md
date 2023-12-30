@@ -125,6 +125,11 @@ os.environ["DEVELOPMENT"] = "AnyValueWillEquateToTrue"
 - https://www.pythontutorial.net/django-tutorial/django-loginview/
 
 
+#### Events model max_ticket max value
+
+- https://stackoverflow.com/questions/849142/how-to-limit-the-maximum-value-of-a-numeric-field-in-a-django-model
+
+
 ### Media
 
 #### Images / Icons
