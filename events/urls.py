@@ -1,7 +1,8 @@
 from django.urls import path
-from .views import UpcomingEvents
+from .views import UpcomingEvents, AddEvent
 
 
 urlpatterns = [
-    path("upcoming", UpcomingEvents.as_view(), name="upcoming"),
+    path("add/", AddEvent.as_view(), name="add_event"),
+    path("", UpcomingEvents.as_view(), name="upcoming"),
 ]

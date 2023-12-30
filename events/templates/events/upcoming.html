@@ -15,10 +15,10 @@
             </tr>
             {% for event in events %}
             <tr class="events-content">
-                <td>event.location</td>
-                <td>event.venue</td>
-                <td>event.datetime</td>
-                <td>event.admission</td>
+                <td>{{ event.location }}</td>
+                <td>{{ event.venue }}</td>
+                <td>{{ event.datetime }}</td>
+                <td>{{ event.admission }}</td>
             </tr>
             {% endfor %}
         </table>

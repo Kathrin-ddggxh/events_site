@@ -9,5 +9,5 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.DeleteModel('UpcomingEvent'),
+        migrations.DeleteModel("UpcomingEvent"),
     ]
