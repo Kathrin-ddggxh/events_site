@@ -51,6 +51,8 @@ To migrate, run ``python manage.py migrate``. This will physically create the da
 
 ### Django Allauth
 
+This was discarded for this project in favour of Django's built in authentication system.
+
 To install [Django Allauth](https://docs.allauth.org/en/latest/installation/quickstart.html) run: ``pip install django-allauth``
 
 After installing, inside allauth/templates directory in .venv/Lib, accounts directory can be copied and moved into root templates directory (templates/allauth/accounts).
@@ -107,6 +109,26 @@ os.environ["DEVELOPMENT"] = "AnyValueWillEquateToTrue"
 
 
 ## Credits
+
+### Code
+
+#### User Registration functionality
+
+- https://learndjango.com/tutorials/django-signup-tutorial
+
+- https://stackoverflow.com/questions/62935406/how-to-make-a-signup-view-using-class-based-views-in-django
+
+#### User Login/Logout functionality
+
+- https://learndjango.com/tutorials/django-login-and-logout-tutorial
+
+- https://www.pythontutorial.net/django-tutorial/django-loginview/
+
+
+#### Events model max_ticket max value
+
+- https://stackoverflow.com/questions/849142/how-to-limit-the-maximum-value-of-a-numeric-field-in-a-django-model
+
 
 ### Media
 

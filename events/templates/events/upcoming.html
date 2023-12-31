@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Upcoming Events{% endblock %}
+
+{% block content %} 
+    <div class="events-container">
+        <h1 class="events-heading">Upcoming Events</h1>
+    
+        <table>
+            <tr>
+                <th>Location</th>
+                <th>Venue</th>
+                <th>Date & Time</th>
+                <th>Admission</th>
+            </tr>
+            {% for event in events %}
+            <tr class="events-content">
+                <td>{{ event.location }}</td>
+                <td>{{ event.venue }}</td>
+                <td>{{ event.datetime }}</td>
+                <td>{{ event.admission }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

@@ -45,6 +45,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navigation */
 
+.active {
+    text-decoration: underline;
+}
+
 .navbar {
     background-color: var(--black) !important;
     border-bottom: solid 7px var(--white);
@@ -60,15 +64,53 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 .3em;
 }
 
+/* override Bootstrap styling */
+.navbar-nav .nav-link.active {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.nav-link:focus, 
+.nav-link:hover,
+.navbar-brand:focus,
+.navbar-brand:hover {
+    background-color: var(--white) !important;
+}
+
 .nav-admin {
     background-color: var(--white);
     color: var(--black);
     padding: .3em 1em;
 }
 
+.nav-admin:focus,
+.nav-admin:hover {
+    color: var(--white) !important;
+    background-color: var(--black) !important;
+}
+
 .navbar-toggler {
     background-color: var(--white);
     border: none;
+}
+
+
+/* Authentication */
+
+.auth-btn {
+    border: none;
+    font-family: var(--heading);
+    font-size: 2rem;
+    padding: .1em .5em;
+    color: var(--black);
+    background-color: var(--white);
+    border: 3px solid transparent;
+}
+
+.auth-btn:hover, .auth-btn:active {
+    color: var(--white);
+    background-color: var(--black);
+    border: 3px var(--white) solid;
 }
 
 /* Home page */
@@ -88,6 +130,41 @@ h1 {
 .bio {
     padding: 3rem;
     color: var(--black);
+}
+
+/* Events Page */
+
+.events-container {
+    width: 100%;
+    text-align: center;
+    background-color: var(--grey);
+    color: var(--black);
+    border-radius: 16px;
+}
+
+.events-heading {
+    font-family: var(--main-font);
+    margin-top: 0;
+    padding: .7em 0;
+    border-bottom: solid var(--black) 4px;
+}
+
+.events-container table {
+    width: 100%;
+}
+
+.events-container th {
+    border-bottom: solid var(--black) 2px;
+    padding-bottom: 1em;
+}
+
+.events-container td {
+    padding: .6em 0;
+}
+
+
+.events-content > :not(:first-child) {
+    border-left: solid var(--black) 1px;
 }
 
 /* Footer */
